@@ -26,16 +26,16 @@ const precos = {
 
 export default function Home() {
   const [ingredientes, setIngredientes] = useState({
-    manteiga: '500',
-    acucarMascavo: '500',
-    acucarRefinado: '1000',
-    ovos: '30',
-    baunilha: '60',
-    farinha: '2000',
-    fermento: '200',
-    sal: '500',
-    gotasDeChocolate: '300',
-    margemDeLucro: '30'
+    manteiga: '320',
+    acucarMascavo: '240',
+    acucarRefinado: '160',
+    ovos: '4',
+    baunilha: '16',
+    farinha: '560',
+    fermento: '8',
+    sal: '8',
+    gotasDeChocolate: '160',
+    margemDeLucro: '60'
   });
 
   const [resultado, setResultado] = useState(null);
@@ -100,7 +100,7 @@ export default function Home() {
               value={ingredientes[key]}
               onChange={handleChange}
               className="w-full p-2 border border-[#e7dbc9] rounded-md bg-[#fffdf8] focus:outline-none focus:ring-2 focus:ring-[#c1a98a]"
-              step="0.1"
+              step="1"
             />
           </div>
         ))}
